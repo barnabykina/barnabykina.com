@@ -1,0 +1,21 @@
+{% assign meta_title = page.title | default: site.title %}
+{% assign meta_description = page.description | default: site.description %}
+{% assign page_path = page.url | remove: "index.html" %}
+{% assign meta_url = page.url | absolute_url %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="alternate" type="application/rss+xml" href="{{ '/rss.xml' | absolute_url }}" title="{{ site.title }}">
+<title>{{ meta_title }}</title>
+<meta name="title" content="{{ meta_title }}">
+<meta name="description" content="{{ meta_description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ meta_url }}">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ meta_url }}">
+<meta property="twitter:title" content="{{ meta_title }}">
+<meta property="twitter:description" content="{{ meta_description }}">
+<link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">

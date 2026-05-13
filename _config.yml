@@ -1,0 +1,32 @@
+title: Barnaby Kina Gichana
+email: barnabykina@gmail.com
+description: Notes, projects, and working thoughts.
+url: "https://barnabykina.com"
+baseurl: ""
+timezone: America/Winnipeg
+permalink: pretty
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+collections:
+  notes:
+    output: true
+    permalink: /notes/:slug/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      header_title: ↩ Index
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

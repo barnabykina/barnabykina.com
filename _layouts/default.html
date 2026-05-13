@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% assign header_title = page.header_title | default: site.title %}
+    <header>
+      <h1>
+        <a href="/">{{ header_title }}</a>
+      </h1>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

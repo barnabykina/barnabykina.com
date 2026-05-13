@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /rss.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% assign notes = site.notes | sort: "date" | reverse %}
+    {% for note in notes %}
+    <item>
+      <title>{{ note.title | xml_escape }}</title>
+      <description>{{ note.description | xml_escape }}</description>
+      <link>{{ note.url | absolute_url }}</link>
+      <guid>{{ note.url | absolute_url }}</guid>
+      <pubDate>{{ note.date | date_to_rfc822 }}</pubDate>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
