@@ -123,10 +123,11 @@ Keep the existing `target="_blank"` and `rel="noreferrer"` attributes for extern
 The "Last updated" line in the footer also lives in `_includes/footer.html`:
 
 ```html
-<span class="footer-updated">Last updated: {{ site.time | date: "%B %-d, %Y" }}</span>
+<span class="footer-updated">Last updated: {{ site.time | format_in_timezone: site.timezone, "%B %-d, %Y, %-I:%M %p [%Z]" }}</span>
 ```
 
 It is generated automatically from the current build time, so it updates each time the site is rebuilt.
+It uses the site's existing `timezone` setting in `_config.yml`, so if you want the displayed zone to change, update that value there. The footer converts that IANA timezone into its current local time and abbreviation at build time, such as `CST` or `CDT`.
 
 ## Adding Or Removing Sections
 

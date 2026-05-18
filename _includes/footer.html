@@ -9,5 +9,5 @@
     <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@barnabykina">YouTube</a>
     <!-- <a target="_blank" rel="noreferrer" href="{{ '/rss.xml' | absolute_url }}">RSS</a> -->
   </span>
-  <span class="footer-updated">Last updated: {{ site.time | date: "%B %-d, %Y" }}</span>
+  <span class="footer-updated">Last updated: {{ site.time | format_in_timezone: site.timezone, "%B %-d, %Y, %-I:%M %p [%Z]" }}</span>
 </footer>
