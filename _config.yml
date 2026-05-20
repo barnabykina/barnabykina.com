@@ -15,6 +15,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:slug/
+  projects:
+    output: true
+    permalink: /projects/:slug/
 defaults:
   - scope:
       path: ""
@@ -25,7 +28,15 @@ defaults:
       type: notes
     values:
       layout: note
-      header_title: ↩ Index
+      header_title: < Back to Notes Index
+      header_url: /notes/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: note
+      header_title: < Back to Projects Index
+      header_url: /projects/
 exclude:
   - Gemfile
   - Gemfile.lock

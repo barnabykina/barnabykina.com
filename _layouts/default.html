@@ -5,9 +5,10 @@
   </head>
   <body>
     {% assign header_title = page.header_title | default: site.title %}
+    {% assign header_url = page.header_url | default: "/" %}
     <header>
       <h1>
-        <a href="/">{{ header_title }}</a>
+        <a href="{{ header_url | relative_url }}">{{ header_title }}</a>
       </h1>
     </header>
 

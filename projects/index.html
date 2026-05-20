@@ -1,0 +1,18 @@
+---
+title: Projects
+description: Archive of projects.
+header_title: < Back to Root Index
+header_url: /
+---
+<section class="notes-list">
+  <h2>All projects:</h2>
+  {% assign projects = site.projects | sort: "date" | reverse %}
+  {% for project in projects %}
+    <section class="note-preview">
+      <h3>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </h3>
+      <span>{{ project.date | date: "%b %-d, %Y" }}</span>
+    </section>
+  {% endfor %}
+</section>
