@@ -17,7 +17,7 @@ Each week will feature a single __challenge run__[^1]. That's right, I am imposi
 
 [^1]: A challenge run is a serious attempt at either hitting the __goal__ or a new __personal record (PR)__, whichever one is faster.
 
-Each day will feature at least one __full-body stretch routine__ and one __bodyweight workout__ to recondition my body. For the first couple weeks, I'll be placing a strong emphasis working out my core. Push-ups are great for an arm pump but they don't really do much for core stability!s
+Each day will feature at least one __full-body stretch routine__ and one __bodyweight workout__ to recondition my body. For the first couple weeks, I'll be placing a strong emphasis working out my core. Push-ups are great for an arm pump but they don't really do much for core stability.
 
 Seeing as my plan isn't super extensive at this point I understand that I may have to update it as the weeks go by and I begin to get a better understanding of the kind of progress that I'm making. I plan to document my progress on my Instagram stories on a weekly basis to keep myself accountable by allowing my friends and peers to hold me accountable.
 

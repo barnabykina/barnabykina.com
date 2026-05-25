@@ -4,31 +4,17 @@ description: Notes, projects, and working thoughts.
 ---
 <section class="intro">
   <p>
-    Junior Systems Administrator & Project Lead at <a href="https://adventistconnect.org/">Adventist Connect</a>.
-    Currently pursuing a Bachelor of Science in Computer Science at <a href="https://www.andrews.edu/">Andrews University</a>.
-  </p>
-  <p>
-    Saxophonist (alto and tenor).
-  </p>
-  <p>
-    You can find my all my social links in the footer of this website.
-  </p>
-  <p>
-    Browse the archives:
-    <a href="{{ '/notes/' | relative_url }}">Notes index</a>,
-    <a href="{{ '/projects/' | relative_url }}">Projects index</a>.
+    Project Lead at <a href="https://adventistconnect.org/">Adventist Connect</a>.
+    Studying Computer Science at <a href="https://www.andrews.edu/">Andrews University</a>.
   </p>
 </section>
 
 <section class="notes-list">
-  <h2>Recent notes:</h2>
-  {% assign notes = site.notes | sort: "date" | reverse %}
-  {% for note in notes %}
-    <section class="note-preview">
-      <h3>
-        <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
-      </h3>
-      <span>{{ note.date | date: "%b %-d, %Y" }}</span>
-    </section>
-  {% endfor %}
+  <h2>Archives:</h2>
+    <h4>
+      <a href="{{ '/notes/' | relative_url }}">Notes</a>
+    </h4>
+    <h4>
+      <a href="{{ '/projects/' | relative_url}}">Projects</a>
+    </h4>
 </section>

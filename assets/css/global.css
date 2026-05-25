@@ -239,6 +239,13 @@ header a:hover {
   background: transparent;
 }
 
+.section-list h2 {
+  margin-bottom: 0.5em;
+  color: var(--theme-sub-text);
+  font-size: 1em;
+  font-weight: 400;
+}
+
 footer {
   position: relative;
   display: flex;
