@@ -37,6 +37,8 @@ defaults:
       layout: note
       header_title: ↩ Project Index
       header_url: /projects/
+include:
+  - .well-known
 exclude:
   - Gemfile
   - Gemfile.lock
