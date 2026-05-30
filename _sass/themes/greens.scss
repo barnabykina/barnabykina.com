@@ -1,0 +1,19 @@
+/* Greens Palette */
+
+$dark-green: #1b211a;
+$green: #628141;
+$light-green: #8bae66;
+$sand: #ebd5ab;
+$gray-medium: #e1e1e0;
+$white:#fff;
+$white-light:#cccccc;
+
+:root {
+  --theme-bg: #{$dark-green};
+  --theme-text: #{$green};
+  --theme-sub-text: #{$green};
+  --theme-link: #{$light-green};
+  --theme-link-hover: #{$white};
+  --theme-code-block: #{$gray-medium};
+  --media-text: #{$sand}
+}

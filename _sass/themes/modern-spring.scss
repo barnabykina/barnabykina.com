@@ -1,0 +1,19 @@
+/* Modern Spring Palette */
+
+$clover-green: #2c3930;
+$hill-green: #3f4f44;
+$red-sand: #a27b5c;
+$sandstone: #dcd7c9;
+$gray-medium: #e1e1e0;
+$white:#fff;
+$white-light:#cccccc;
+
+:root {
+  --theme-bg: #{$clover-green};
+  --theme-text: #{$hill-green};
+  --theme-sub-text: #{$hill-green};
+  --theme-link: #{$red-sand};
+  --theme-link-hover: #{$white};
+  --theme-code-block: #{$gray-medium};
+  --media-text: #{$sandstone}
+}
