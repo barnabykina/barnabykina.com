@@ -1,0 +1,19 @@
+/* Urban Forest Palette */
+
+$dark-moss: #181c14;
+$forest: #3c3d37;
+$mint: #697565;
+$cream: #ecdfcc;
+$gray-medium: #e1e1e0;
+$white:#fff;
+$white-light:#cccccc;
+
+:root {
+  --theme-bg: #{$dark-moss};
+  --theme-text: #{$forest};
+  --theme-sub-text: #{$forest};
+  --theme-link: #{$mint};
+  --theme-link-hover: #{$white};
+  --theme-code-block: #{$gray-medium};
+  --media-text: #{$cream}
+}

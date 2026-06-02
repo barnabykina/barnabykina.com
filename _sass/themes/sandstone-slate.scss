@@ -1,0 +1,20 @@
+/* Sandstone Slate Palette */
+
+$slate: #222831;
+$exposed-slate: #292e46;
+$sand-slate: #948979;
+$exposed-sand-slate: #dfd0b8;
+$listerine: #acc18a;
+$gray-medium: #e1e1e0;
+$white:#fff;
+$white-light:#cccccc;
+
+:root {
+  --theme-bg: #{$sand-slate};
+  --theme-text: #{$sand-slate};
+  --theme-sub-text: #{$listerine};
+  --theme-link: #{$exposed-sand-slate};
+  --theme-link-hover: #{$white};
+  --theme-code-block: #{$gray-medium};
+  --media-text: #{$sand-slate}
+}

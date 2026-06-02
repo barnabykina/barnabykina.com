@@ -1,0 +1,28 @@
+/* Experimental Palette */
+
+$dark-green: #1b211a;
+$dark: #272932;
+$medium: #A4A7B7;
+$light: #f4f4f6;
+$cyan: #0f7173;
+$yellorange: #f09c2d;
+$redd: #cc2936;
+$purple-gray: #938ba1;
+$green-wash: #70877f;
+$green: #628141;
+$light-green: #8bae66;
+$sand: #ebd5ab;
+$gray-medium: #e1e1e0;
+$white:#fff;
+$white-light:#cccccc;
+
+:root {
+  --theme-bg: #{$dark};
+  --theme-text: #{$green};
+  --theme-sub-text: #{$purple-gray};
+  --theme-link: #{$redd};
+  --theme-link-hover: #{$light};
+  --theme-code-block: #{$gray-medium};
+  --media-text: #{$light};
+  --hover-bg-colour: #{$redd};
+}
