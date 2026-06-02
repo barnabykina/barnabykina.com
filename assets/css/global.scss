@@ -4,7 +4,8 @@
 // @use "themes/urban-forest";
 // @use "themes/sandstone-slate";
 // @use "themes/modern-spring";
-@use "themes/greens";
+// @use "themes/greens";
+@use "themes/temp";
 
 @font-face {
   font-family: "IBM Plex Mono";
@@ -86,7 +87,7 @@ a {
 }
 
 a:hover {
-  background-color: var(--color-red);
+  background-color: var(--hover-bg-colour);
   color: var(--theme-link-hover);
   text-decoration: none !important;
 }
