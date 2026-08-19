@@ -11,6 +11,7 @@ kramdown:
 highlighter: rouge
 plugins:
   - jekyll-sitemap
+  - jekyll-jupyter-notebook
 collections:
   notes:
     output: true
@@ -43,3 +44,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+jupyter-notebook:
+  - prompt: true
+  - input: true
