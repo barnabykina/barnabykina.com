@@ -5,7 +5,7 @@
 // @use "themes/sandstone-slate";
 // @use "themes/modern-spring";
 // @use "themes/greens";
-@import "themes/temp";
+@use "themes/temp";
 
 @font-face {
   font-family: "IBM Plex Mono";
@@ -262,4 +262,68 @@ footer span {
 .footer-updated {
   opacity: 0.7;
   font-size: 0.9em;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Jupyter notebook container */
+  .note-content .jp-Notebook,
+  .note-content .jp-Cell,
+  .note-content .cell {
+    background: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
+  }
+
+  /* Markdown cells */
+  .note-content .jp-MarkdownOutput,
+  .note-content .text_cell_render {
+    background: transparent !important;
+    color: var(--theme-text) !important;
+  }
+
+  /* Code input areas */
+  .note-content .jp-InputArea,
+  .note-content .input_area,
+  .note-content .highlight {
+    background: var(--theme-code-block) !important;
+    color: var(--theme-text) !important;
+  }
+
+  /* Code blocks */
+  .note-content .jp-InputArea pre,
+  .note-content .input_area pre,
+  .note-content .highlight pre {
+    background: var(--theme-code-block) !important;
+    color: var(--theme-text) !important;
+  }
+
+  /* Notebook output */
+  .note-content .jp-OutputArea,
+  .note-content .output_area,
+  .note-content .output_subarea {
+    background: var(--theme-bg) !important;
+    color: var(--theme-text) !important;
+  }
+
+  /* In[] / Out[] prompts */
+  .note-content .jp-InputPrompt,
+  .note-content .jp-OutputPrompt,
+  .note-content .prompt {
+    color: var(--theme-sub-text) !important;
+  }
+
+  /* Tables / pandas DataFrames */
+  .note-content .dataframe {
+    background: var(--theme-bg);
+    color: var(--theme-text);
+    border-collapse: collapse;
+  }
+
+  .note-content .dataframe th,
+  .note-content .dataframe td {
+    border-color: var(--theme-sub-text);
+  }
+
+  .note-content .dataframe th {
+    background: var(--theme-code-block);
+  }
 }
